@@ -10,4 +10,6 @@ const ExamplePage = () => {
 
 ExamplePage.displayName = 'ExamplePage'
 
+ExamplePage.whyDidYouRender = true
+
 export default ExamplePage

@@ -10,4 +10,6 @@ const TestPage = () => {
 
 TestPage.displayName = 'TestPage'
 
+TestPage.whyDidYouRender = true
+
 export default TestPage
