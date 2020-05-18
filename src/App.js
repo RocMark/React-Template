@@ -1,11 +1,21 @@
-import React from 'react';
+import React from 'react'
+import { BrowserRouter, Switch } from 'react-router-dom'
+import { renderRoutes } from 'react-router-config'
+import routes from './routes'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div className='App'>
       <h1>App</h1>
+      <BrowserRouter>
+        <Switch>
+          <Switch>{renderRoutes(routes)}</Switch>
+        </Switch>
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+App.displayName = 'App'
+
+export default App
