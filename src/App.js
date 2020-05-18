@@ -9,7 +9,7 @@ const App = () => {
       <h1>App</h1>
       <BrowserRouter>
         <Switch>
-          <Switch>{renderRoutes(routes)}</Switch>
+          {renderRoutes(routes)}
         </Switch>
       </BrowserRouter>
     </div>
