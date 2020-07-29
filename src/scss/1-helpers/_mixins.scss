@@ -1,0 +1,9 @@
+@mixin example-mixin($color) {
+  color: $color;
+}
+
+@mixin fullImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

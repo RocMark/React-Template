@@ -1,0 +1,7 @@
+$mobile-bp: 575px;
+
+@mixin mobile() {
+  @media all and (max-width: $mobile-bp) {
+    @content;
+  }
+}

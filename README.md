@@ -1,14 +1,25 @@
 # React-Template
 
+# Install & Run
+
+```bash
 # Install
 - npm run setup (npm install & copy .env.example file)
 
 # Usage
 - npm run start
+```
+
 
 # Features
-- [x] ESLint Setup
-- [x] BluePrint (Generate Component Template)
-- [x] React Router
-- [x] why-did-you-render
-- [x] react-fast-compare (React.memo Deep Compare)
+- Main Function
+  - [x] React Router
+  - [x] SCSS Structure
+
+- Utils
+  - [x] BluePrint (Generate Component Template)
+  - [x] react-fast-compare (React.memo Deep Compare)
+
+- Linter & Test
+  - [x] ESLint Setup
+  - [x] why-did-you-render

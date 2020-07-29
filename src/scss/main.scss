@@ -1,0 +1,72 @@
+// 參考資料 Links
+// [SCSS 基礎用法](http://bit.ly/2TkAPuP)
+// [RWD Font 解法](http://bit.ly/2VKmIka)
+// [css2Sass Convertor](http://bit.ly/2uSoEw7)
+// [Google Fonts](http://bit.ly/2Tleldh)
+// [FontAwesome](http://bit.ly/2QTLJap)
+
+// 1-HELPERS (variable, function)
+@import './1-helpers/all-helpers.scss';
+
+// 2-TOOLS (3dr Party, reset, normalize)
+@import './2-tools/_normalize.scss';
+
+// 3-BASICS (general style)
+@import './3-basics/all-basics.scss';
+
+// 4-LAYOUT (backbone style)
+@import './4-layout/all-layout.scss';
+
+
+// 5-MODULES (暫未使用)
+
+// 6-PAGES
+@import './6-pages/all-pages.scss';
+
+// 7-COMPONENTS
+@import './7-components/all-components.scss';
+
+// ! 改變 root 的 font-size 會更動 rem 的基準 (原始 16px)
+:root {
+  font-size: 16px;
+}
+
+// X-Temp 待處理
+
+// 待分類 (Disable Scrolling when LightBox Shows)
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.clear-btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// BS4 沒有提供
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// 隱藏 date 的上下箭頭 number 同理
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+}

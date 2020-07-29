@@ -1,0 +1,18 @@
+$the-nav-height: 70px;
+
+.the-layout {
+  max-width: $max-view-point;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.the-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.the-main {
+  margin-top: $the-nav-height;
+  width: 100%;
+}

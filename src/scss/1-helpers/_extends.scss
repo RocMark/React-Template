@@ -1,0 +1,75 @@
+/*  Utils Style */
+
+%example-extend {
+  border: 1px solid #fff;
+}
+
+%center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%full-screen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+%clear-ul-style {
+  list-style-type: none;
+  padding: 0;
+}
+
+%clear-btn-style {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+$default-link-color: #FFF;
+
+%clear-link-style {
+  text-decoration: none;
+
+  &:active,
+  &:hover {
+    text-decoration: none;
+    color: $default-link-color;
+  }
+}
+
+// scroll-bar [參考資料](https://bit.ly/2Qt7qg7)
+
+%scroll-bar-style {
+  // * 內容過多才會出現 ScrollBar
+  overflow-x: auto;
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 30px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $scroll-bar-bg;
+
+    &:hover {
+      background-color: rgba($scroll-bar-bg, 0.5);
+    }
+  }
+}
