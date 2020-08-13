@@ -7,6 +7,7 @@
 - npm run start
 
 # Features
+- [x] axios
 - [x] ESLint Setup
 - [x] BluePrint (Generate Component Template)
 - [x] React Router
