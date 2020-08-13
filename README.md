@@ -13,3 +13,9 @@
 - [x] React Router
 - [x] why-did-you-render
 - [x] react-fast-compare (React.memo Deep Compare)
+
+# Redux
+- [x] Redux
+- [x] redux-thunk
+- [x] redux-persist
+- [x] redux-devtools setup (chrome)
